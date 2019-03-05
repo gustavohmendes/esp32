@@ -29,6 +29,8 @@ void debug_setup() {
   nvicInitStructure.NVIC_IRQChannelCmd = ENABLE;
   NVIC_Init(&nvicInitStructure);
 
+	// teste commit
+
   usartInitStructure.USART_BaudRate = DEBUG_USART_BAUD;
   usartInitStructure.USART_WordLength = USART_WordLength_8b;
   usartInitStructure.USART_Parity = USART_Parity_No;
