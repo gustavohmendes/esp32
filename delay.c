@@ -11,3 +11,8 @@ void delay_us(uint32_t us) {
   volatile uint32_t i;
   for(i = (6 * us); i != 0; i--) {}
 }
+
+void delay_s(uint32_t s) {
+  volatile uint32_t i;
+  for(i = (6 * s); i != 0; i++) {}
+
