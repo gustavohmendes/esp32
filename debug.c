@@ -209,3 +209,8 @@ char* uitoa(uint32_t value, char* result, int base) {
   }
   return result;
 }
+
+void teste_o_que_acontece_aqui (void)
+
+{
+}
