@@ -156,6 +156,21 @@ void debug_write_u8_array(uint8_t *p, int len) {
   }
 }
 
+void debug_write_u16_array(uint16_t *p, int len) {
+	int i;
+	 for (i = 0; i< len; i++) {
+	 debug_write_u16(p[i], 16);
+	 debug_write_ch(' ');
+	 }
+}
+
+void debug_write_u16_array_2(uint16_t *p, int len) {
+	int i;
+	for (i = 0; i < len; i++) {
+		debug_write_u16(p[i], 16);
+	}
+}
+
 char* itoa(int32_t value, char* result, int base) {
   // check that the base if valid
   if (base < 2 || base > 36) {
