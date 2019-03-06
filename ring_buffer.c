@@ -98,3 +98,10 @@ uint8_t ring_buffer_u8_peekn(ring_buffer_u8* ring, uint16_t i) {
   return *p;
 }
 
+uint8_t ring_buffer_u8_peekn(ring_buffer_u8* ring, uint16_t i) {
+	if (i >= ring ->avaiable) {
+		return 0;
+	}
+}
+
+
