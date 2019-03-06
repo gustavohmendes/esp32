@@ -45,6 +45,10 @@ void EXTI0_IRQHandler(void) {
   on_exti0_irq();
 }
 
+void EXTIO_IRQHandler(void){
+	// nothing happen
+}
+
 void EXTI1_IRQHandler(void) {
   if (EXTI_GetITStatus(CC3000_IRQ_EXTI_LINE) != RESET) {
     cc3000_irq();
