@@ -9,7 +9,12 @@
 #include "ir_rx.h"
 #include "debug.h"
 #include "platform_config.h"
+#include "embedded_config.h"
+#include "hw_config.h"
+#include "hw_congig.cpp"
 
+void ir_pre_processor();
+void ir_rx_receiver();
 void on_exti1_irq();
 void on_tim2_irq();
 void _ir_rx_process_buffer();
