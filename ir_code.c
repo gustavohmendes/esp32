@@ -9,12 +9,16 @@
 #define NO_MATCH         -1
 #define MATCH_THRESHOLD  100
 #define MIN_SIGNAL_COUNT 5
+#define FREQUENCY	38000
+#define DUTY_CYCLE 	50
 
+int _ir_coderx_match(IRCode* code, uint16_t* buffer, uint16_t bufferLen);
 int _ir_code_match(IrCode* code, uint16_t* buffer, uint16_t bufferLen);
 
 #define CODE_COUNT 13
 IrCode codes[CODE_COUNT];
 
+uint16_t code18[] = {2440, 516, 1232, 541, 616};
 uint16_t code0[] = { 2440, 516, 1232, 541, 616, 541, 615, 542, 1231, 542, 615, 542, 614, 543, 614, 542, 1230, 543, 615, 542, 613, 543, 614, 543, 614, 551 };
 uint16_t code1[] = { 2440, 515, 640, 517, 615, 541, 615, 541, 616, 542, 615, 542, 615, 541, 614, 542, 1230, 542, 614, 542, 615, 542, 614, 543, 612, 551 };
 uint16_t code2[] = { 2416, 539, 1231, 541, 615, 541, 614, 542, 614, 543, 614, 542, 614, 542, 613, 543, 1230, 543, 614, 542, 614, 544, 613, 544, 613, 551 };
